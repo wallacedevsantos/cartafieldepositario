@@ -124,6 +124,7 @@ body {
 #carta-conteudo span {
   font-weight: bold;
   display: inline;
+  text-transform: uppercase;
 }
 
 #data {

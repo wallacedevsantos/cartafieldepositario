@@ -80,6 +80,12 @@
           autocomplete="off"
           placeholder="Valor da NF"
         />
+        <input
+          type="text"
+          id="material"
+          autocomplete="off"
+          placeholder="Material"
+        />
       </form>
       <div id="botaoGerarCarta">
         <button type="button" onclick="gerarCarta()">
@@ -130,10 +136,9 @@
       <p>
         CLÁUSULA PRIMEIRA: A DEPOSITÁRIA declara para todos os efeitos legais e
         sob as penas da lei, que recebeu da DEPOSITANTE, para guardar e
-        custodiar Redes de proteção para o slqa e para o piso a piso, Nota
-        Fiscal <span>{NF}</span>, emitida <span>{DATANF}</span>, do fornecedor
-        <span>{FORNECEDOR}</span>, ao preço de mercado de R$
-        <span>{VALOR}</span>(BEM DEPOSITADO).
+        custodiar <span>{MATERIAL}</span>, Nota Fiscal <span>{NF}</span>,
+        emitida <span>{DATANF}</span>, do fornecedor <span>{FORNECEDOR}</span>,
+        ao preço de mercado de R$ <span>{VALOR}</span>(BEM DEPOSITADO).
       </p>
       <p>
         CLÁUSULA SEGUNDA: A mercadoria, objeto deste COMPROMISSO DE FIEL
@@ -173,7 +178,7 @@
       <p id="data">São Paulo, {DATADEHOJE}.</p>
       <div class="assinaturas">
         <div id="assinaturaObra">
-          <p>
+          <p style="text-transform: uppercase">
             ____________________________________________ <br />
             {RAZÃOSOCIALOBRA}
           </p>

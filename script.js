@@ -9,6 +9,7 @@ function gerarCarta() {
   var nfData = document.getElementById("nfData").value;
   var fornecedor = document.getElementById("fornecedor").value;
   var valorNf = document.getElementById("valorNf").value;
+  var material = document.getElementById("material").value;
 
   var texto = document.getElementById("carta-conteudo");
 
@@ -39,6 +40,7 @@ function gerarCarta() {
   texto.innerHTML = texto.innerHTML.replace("{DATANF}", nfData);
   texto.innerHTML = texto.innerHTML.replace("{FORNECEDOR}", fornecedor);
   texto.innerHTML = texto.innerHTML.replace("{VALOR}", valorNf);
+  texto.innerHTML = texto.innerHTML.replace("{MATERIAL}", material);
   texto.innerHTML = texto.innerHTML.replace("{DATADEHOJE}", dataFormatada);
 
   var form = document.getElementById("formulario");
