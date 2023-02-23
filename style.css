@@ -32,6 +32,8 @@ body {
   margin-top: 2rem;
   color: white;
   font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .formulario form {
@@ -76,6 +78,8 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  padding-bottom: 1rem;
 }
 
 #botaoGerarCarta button {
@@ -204,12 +208,15 @@ body {
   border: 2px solid red;
 }
 
+#rodape {
+  display: block;
+}
+
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
   width: 100%;
   background-color: rgb(69, 147, 248) !important;
   color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
 }

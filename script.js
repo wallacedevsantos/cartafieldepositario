@@ -43,7 +43,9 @@ function gerarCarta() {
 
   var form = document.getElementById("formulario");
   var botao = document.getElementById("botaoGerarCarta");
+  var rodape = document.getElementById("rodape");
 
+  rodape.style.display = "none";
   form.style.display = "none";
   botao.style.display = "none";
   texto.style.display = "block";
